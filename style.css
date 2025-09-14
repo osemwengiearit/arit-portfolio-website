@@ -11,31 +11,32 @@
 
 * {
   margin: 0;
-  padding: 0,
+  padding: 0;
   box-sizing: border-box;
-  text-decoration: noon;
+  text-decoration: none;
 }
 
 html,
-body{
+body {
   height: 100%;
 }
 
-body{
-  font-family: inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helivetica Neue", Arial;
+body {
+  font-family: inter, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helivetica Neue', Arial;
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
 }
 
-.container{
+.container {
   max-width: 1100px;
-  margin:  0 auto;
+  margin: 0 auto;
   padding: 20px;
 }
 
 /*Header*/
-.site-header{
+.site-header {
   background: var(--white);
   box-shadow: 0 1px 8px rgba(15, 23, 42, 0.06);
   position: sticky;
@@ -43,14 +44,14 @@ body{
   z-index: 50;
 }
 
-.header-inner{
+.header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
 }
 
-.brand{
+.brand {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -59,23 +60,23 @@ body{
   font-weight: 700;
 }
 
-.logo{
+.logo {
   width: 48px;
   height: 48px;
 }
 
-.nav{
+.nav {
   display: block;
 }
 
-.nav ul{
+.nav ul {
   display: flex;
   gap: 18px;
   align-items: center;
   text-decoration: none;
 }
 
-.nav li a{
+.nav li a {
   color: var(--text);
   text-decoration: none;
   padding: 8px 10px;
@@ -83,18 +84,18 @@ body{
   font-weight: 600;
 }
 
-.nav a:hover{
-  background: rgba(30,  58, 138, 0.06);
+.nav a:hover {
+  background: rgba(30, 58, 138, 0.06);
   color: var(--primary);
 }
 
-.nav a.active{
+.nav a.active {
   background: var(--primary);
   color: var(--white);
 }
 
 /*Mobile nav toggle*/
-.nav-toggle{
+.nav-toggle {
   display: none;
   background: none;
   font-size: 22px;
@@ -109,12 +110,12 @@ body{
   padding: 60px 0;
 }
 
-.lead{
+.lead {
   color: var(--muted);
   margin: 12px 0;
 }
 
-.profile{
+.profile {
   width: 320px;
   border-radius: 50%;
   object-fit: cover;
@@ -122,51 +123,50 @@ body{
   box-shadow: 0 6px 18px rgba(17, 24, 39, 0.08);
 }
 
-.cta-group{
+.cta-group {
   display: flex;
   gap: 12px;
   margin-top: 16px;
 }
 
-.btn{
+.btn {
   display: inline-block;
   padding: 10px 16px;
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
-  /* transition: background 0.3s ease; */
 }
 
-.btn.primary{
+.btn.primary {
   background: var(--primary);
   color: var(--white);
 }
 
-.btn.outline{
+.btn.outline {
   border: 2px solid var(--primary);
   color: var(--primary);
   background: transparent;
 }
 
 /*Features*/
-.features{
+.features {
   padding: 40px 0;
 }
 
-.grid{
+.grid {
   display: grid;
   gap: 20px;
 }
 
-.col-3{
+.col-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.col-2{
+.col-2 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.card{
+.card {
   background: var(--card);
   padding: 20px;
   border-radius: 10px;
@@ -174,39 +174,39 @@ body{
 }
 
 /*Projects*/
-.projects-preview{
-  padding: 40px 0 ;
+.projects-preview {
+  padding: 40px 0;
 }
 
-.project-card{
+.project-card {
   background: var(--card);
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
 }
 
-.project-card img{
+.project-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-} 
+}
 /*Links*/
 
-.links{
-color: var(--primary);
-font-weight: 700;
-margin-right: 8px;
+.links {
+  color: var(--primary);
+  font-weight: 700;
+  margin-right: 8px;
 }
 
 /*Timeline*/
-.timeline{
+.timeline {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.timeline-item{
+.timeline-item {
   background: var(--card);
   padding: 18px;
   border-radius: 8px;
@@ -221,12 +221,14 @@ form {
   box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
   max-width: 720px;
 }
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
   margin-bottom: 12px;
 }
+
 input[type='text'],
 input[type='email'],
 textarea {
@@ -246,13 +248,12 @@ textarea {
   color: var(--muted);
 }
 
-/* Utilities */
-.center {
+Utilities .center {
   text-align: center;
 }
 
 /* Fade-in helper */
-.card,
+/* .card,
 .project-card,
 .timeline-item,
 .hero-text {
@@ -266,7 +267,7 @@ textarea {
 .hero-text.visible {
   opacity: 1;
   transform: none;
-}
+} */
 
 /* Responsive */
 @media (max-width: 900px) {

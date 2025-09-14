@@ -3,51 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arit Bright | Portfolio</title>
+    <meta name="author" content="Osemwengie Arit Bright" />
+    <meta name="description" content="Arit Portfolio Website" />
+    <title>About | Arit Bright</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Image/logo.svg" type="image/x-icon" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo"><span>Ar</span>it</a>
-
-      <nav class="navbar">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="project.html">Projects</a>
-        <a href="education.html">Education</a>
-      </nav>
-
-      <a href="contact.html" class="contact">Contact Me</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img src="Image/logo.svg" alt="Logo" class="logo" />
+          <span>Arit</span></a
+        >
+        <button class="nav-toggle" aria-label="Open navigation" id="navToggle">
+          ☰
+        </button>
+        <nav class="nav" id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section class="home">
-      <div class="home-content">
-        <h3>hi, I'm</h3>
-
-        <h1>
-          <span>Osemwengie Arit Bright <br /></span>a Software Developer
-        </h1>
-
-        <p>
-          Dedicated junior software developer specialised in frontend and
-          backend development with a focus on building scalable and
-          user-friendly web applications. Proficient in Python, JavaScript, and
-          HTML/CSS, with experience in frameworks like Django and React and
-          MongoDB.
-        </p>
-
-        <div class="btn-box">
-          <button class="btn-1">hire me</button>
-          <button class="btn-2">experience</button>
+    <main class="container">
+      <section class="about-intro">
+        <div class="grid cols-2">
+          <div>
+            <h1>About Me</h1>
+            <p class="lead">
+              Fullstack Software Engineer focused on building scalable and
+              accessible applications.
+            </p>
+            <p>
+              I enjoy working on both front-end and back-end systems, and I have
+              an appetite for learning new tools and technologies.
+            </p>
+          </div>
+          <div class="hero-media card" aria-hidden="false">
+            <img src="Image/hero-2.jpg" alt="Profile photo" class="profile" />
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="img-box"><img src="Image/Image.jpg.jpg" alt="" " /></div>
-    </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <div class="grid cols-3">
+          <div class="skill card">
+            <h3>JavaScript</h3>
+            <div class="bar"><span style="width: 85%"></span></div>
+          </div>
+          <div class="skill card">
+            <h3>React</h3>
+            <div class="bar"><span style="width: 75%"></span></div>
+          </div>
+          <div class="skill card">
+            <h3>Node.js</h3>
+            <div class="bar"><span style="width: 70%"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="values">
+        <h2>Values</h2>
+        <ul class="values-list">
+          <li class="card">Integrity</li>
+          <li class="card">Excellence</li>
+          <li class="card">Collaboration</li>
+          <li class="card">Lifelong Learning</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Osemwengie Arit Bright — All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
