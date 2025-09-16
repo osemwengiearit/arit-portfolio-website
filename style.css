@@ -253,7 +253,7 @@ Utilities .center {
 }
 
 /* Fade-in helper */
-/* .card,
+.card,
 .project-card,
 .timeline-item,
 .hero-text {
@@ -267,7 +267,7 @@ Utilities .center {
 .hero-text.visible {
   opacity: 1;
   transform: none;
-} */
+}
 
 /* Responsive */
 @media (max-width: 900px) {
