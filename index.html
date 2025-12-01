@@ -21,29 +21,89 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html">
-          <img src="img/logo.svg" alt="Logo" class="logo" /> <span>Arit</span>
-        </a>
+        <a class="logo" href="index.html"> arit </a>
 
         <button class="nav-toggle" aria-label="Open navigation" id="navToggle">
           ☰
         </button>
 
-        <nav class="nav" id="mainNav">
-          <ul>
-            <li><a href="index.html" class="active">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="experience.html">resume</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contact.html" class="contact">Contact Me</a></li>
-          </ul>
+        <nav id="mainNav">
+          <a href="index.html" class="active">home</a>
+          <a href="about.html">about</a>
+          <a href="resume.html">resume</a>
+          <a href="project.html">projects</a>
+          <a href="blog.html">blog</a>
+          <a href="contact.html" class="contact">contact me</a>
         </nav>
       </div>
     </header>
+
+    <main class="container">
+      <section class="hero-container" id="home">
+        <div class="hero-text card">
+          <h1>hi, i'm <span>osemwengie arit bright</span></h1>
+          <p class="subtitle">
+            Software Developer - building clean, accessible, and scalable web
+            applications.
+          </p>
+          <p class="description">
+            Motivated and eager software developer with hands-on experience and
+            strong passion for learning and best practices.
+          </p>
+
+          <div class="cta-group">
+            <a class="btn-primary" href="contact.html">hire me</a>
+            <a class="btn-outline" href="project.html">my works &rarr;</a>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/osemwengiearit"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/osemwengie-arit-bright-a84a28159/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://x.com/arit_bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/arit_bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/osemwengie.arit.bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="hero-media card" aria-hidden="false">
+          <img src="img/hero.png" alt="arit picture" class="profile" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
