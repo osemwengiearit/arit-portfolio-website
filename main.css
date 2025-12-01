@@ -265,3 +265,12 @@ nav a:active {
     transform: translateY(0);
   }
 }
+
+.site-footer {
+  background: var(--white);
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #eef2ff;
+  text-align: center;
+  color: var(--muted);
+}
