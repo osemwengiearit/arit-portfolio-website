@@ -21,21 +21,19 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html">
-          <img src="img/logo.svg" alt="Logo" class="logo" /> <span>Arit</span>
-        </a>
+        <a class="logo" href="index.html"> arit </a>
 
         <button class="nav-toggle" aria-label="Open navigation" id="navToggle">
           ☰
         </button>
 
-        <nav class="nav" id="mainNav">
-          <a href="index.html">home</a>
+        <nav id="mainNav">
+          <a href="index.html" class="active">home</a>
           <a href="about.html">about</a>
           <a href="resume.html">resume</a>
           <a href="project.html">projects</a>
@@ -44,5 +42,65 @@
         </nav>
       </div>
     </header>
+
+    <main>
+      <section class="about-container" id="home">
+        <div class="about card">
+          <h2>about me</h2>
+          <p class="about-text">
+            a multifaceted developer with a knack for blending creativity &
+            technical precision.
+          </p>
+
+          <div class="cta-group">
+            <a class="btn-primary" href="contact.html">hire me</a>
+            <a class="btn-outline" href="project.html">my works &rarr;</a>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/osemwengiearit"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/osemwengie-arit-bright-a84a28159/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://x.com/arit_bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/arit_bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/osemwengie.arit.bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Osemwengie Arit Bright — All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
