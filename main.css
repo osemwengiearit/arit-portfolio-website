@@ -22,6 +22,8 @@ body {
   background-color: var(--bg);
 }
 
+/* This is the home page styling */
+
 .site-header {
   display: block;
   box-shadow: 0 1px 8px rgba(14, 165, 233, 0.18);
@@ -162,7 +164,7 @@ nav a.active {
 .cta-group {
   display: flex;
   gap: 1rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .cta-group a {
@@ -313,4 +315,79 @@ nav a.active {
   border-top: 1px solid #eef2ff;
   text-align: center;
   color: var(--muted);
+}
+
+/* This is the about section styling */
+.about-section {
+  width: 90%;
+  max-width: 1150px;
+  margin: 100px auto;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.section-head {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.about-card {
+  max-width: 700px;
+  margin: 35px auto;
+  padding: 22px 25px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: var(--accent);
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.about-right {
+  display: grid;
+  flex: 2;
+  text-align: left;
+}
+
+.about-right p {
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.about-bio {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.about-bio--muted {
+  opacity: 0.8;
 }

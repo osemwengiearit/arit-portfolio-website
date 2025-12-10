@@ -17,31 +17,339 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html">
-          <img src="img/logo.svg" alt="Logo" class="logo" /> <span>Arit</span>
-        </a>
+        <a class="logo" href="index.html"> arit </a>
 
         <button class="nav-toggle" aria-label="Open navigation" id="navToggle">
           ☰
         </button>
 
-        <nav class="nav" id="mainNav">
+        <nav id="mainNav">
           <a href="index.html">home</a>
           <a href="about.html">about</a>
-          <a href="resume.html">resume</a>
+          <a href="resume.html" class="active">resume</a>
           <a href="project.html">projects</a>
+          <a href="blog.html">blog</a>
           <a href="contact.html" class="contact">contact me</a>
         </nav>
       </div>
     </header>
+
+    <main>
+      <section class="resume-section" id="resume">
+        <div class="header-content">
+          <h2>about me</h2>
+          <p>
+            a multifaceted developer with a knack for blending creativity &
+            technical precision.
+          </p>
+        </div>
+
+        <div class="cta-group">
+          <a class="btn-primary" href="contact.html">hire me</a>
+          <a class="btn-outline" href="project.html">my works &rarr;</a>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/osemwengiearit"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/osemwengie-arit-bright-a84a28159/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://x.com/arit_bright"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/arit_bright"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://web.facebook.com/osemwengie.arit.bright"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+        <div class="content-card">
+          <div class="tabs-navigation">
+            <button class="tab-button active">skill</button>
+            <button class="tab-button">experience</button>
+            <button class="tab-button">education</button>
+            <button class="tab-button">interest</button>
+          </div>
+
+          <div class="tabs-content">
+            <div class="uiux-card">
+              <h4>HTML5 & CSS3</h4>
+              <p>Building modern, semantic web pages with responsive design.</p>
+            </div>
+
+            <div class="uiux-card">
+              <h4>JavaScript (ES6+)</h4>
+              <p>
+                Expertise in vanilla JS, DOM manipulation, and modern frameworks
+                (React).
+              </p>
+            </div>
+
+            <div class="uiux-card">
+              <h4>Hardware & Software Troubleshooting</h4>
+              <p>
+                Diagnosing and resolving issues with PCs, networks, and
+                applications.
+              </p>
+            </div>
+
+            <div class="uiux-card">
+              <h4>Network Management (TCP/IP)</h4>
+              <p>
+                Setting up, securing, and maintaining local area networks and
+                basic routing.
+              </p>
+            </div>
+
+            <div class="uiux-card">
+              <h4>Theme & Plugin Customization</h4>
+              <p>
+                Modifying premium themes and developing custom solutions using
+                hooks and filters.
+              </p>
+            </div>
+
+            <div class="uiux-card">
+              <h4>WooCommerce Implementation</h4>
+              <p>
+                Setting up e-commerce sites, configuring payment gateways, and
+                managing product inventories.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-grid">
+            <div class="experience-card">
+              <h4>Tech Solutions Co.: Lead Frontend Dev</h4>
+              <p class="dates">2021 – Present</p>
+              <p>
+                Engineered and deployed responsive, user-centric web
+                applications using React and SCSS, resulting in a
+                <strong>30% improvement</strong> in user engagement metrics. Led
+                code reviews, mentored junior developers, and enforced best
+                practices for accessibility (WCAG).
+              </p>
+            </div>
+
+            <div class="experience-card">
+              <h4>CubitHost Limited.: WP & E-commerce Lead</h4>
+              <p class="dates">2019 – 2021t</p>
+              <p>
+                Developed and customized over 15 high-volume WooCommerce
+                e-commerce sites, integrating complex payment gateways and
+                optimizing database performance for high traffic. Managed client
+                expectations and project timelines from wireframe to launch
+              </p>
+            </div>
+
+            <div class="experience-card">
+              <h4>Lakeshore Cancer Center.: IT Support Specialist</h4>
+              <p class="dates">2018 – 2019</p>
+              <p>
+                Provided Tier 2 technical support for hardware, software, and
+                network issues for 200+ employees, reducing average resolution
+                time by <strong>45%</strong>. Managed internal network
+                infrastructure (TCP/IP, DHCP, DNS) and ensured system security
+                compliance.
+              </p>
+            </div>
+
+            <div class="experience-card">
+              <h4>Hybrid Group.: Web Systems Administrator</h4>
+              <p class="dates">2017 – 2018</p>
+              <p>
+                Maintained and optimized company's server infrastructure
+                (Linux/Apache) and managed deployment pipelines (CI/CD). Handled
+                both server-side scripting (PHP) and client-side bug fixes to
+                ensure operational uptime.
+              </p>
+            </div>
+          </div>
+
+          <div class="education-grid">
+            <div class="education-card">
+              <h4>BSc Computer Science (NOUN)</h4>
+              <p class="dates">2021 – 2025</p>
+              <p>
+                Focus on core computer science principles, algorithms, and
+                software development methodologies, providing a strong academic
+                foundation for technical roles.
+              </p>
+            </div>
+
+            <div class="education-card">
+              <h4>Frontend Development (Axia Africa)</h4>
+              <p class="dates">Mar. 2026</p>
+              <p>
+                Specialized training focused on advanced HTML, CSS, modern
+                JavaScript frameworks, and building highly interactive,
+                responsive user interfaces.
+              </p>
+            </div>
+
+            <div class="education-card">
+              <h4>Cisco Certified Support Technician (CCST) IT Support</h4>
+              <p class="dates">2026</p>
+              <p>
+                Demonstrated proficiency in IT support functions, encompassing
+                troubleshooting, hardware setup, and basic network
+                administration.
+              </p>
+            </div>
+
+            <div class="uiux-card education-card">
+              <h4>Frontend Web Development (AQskills)</h4>
+              <p class="dates">Mar. 2026</p>
+              <p>
+                Comprehensive training covering the full spectrum of core
+                frontend technologies, including dynamic scripting with
+                JavaScript.
+              </p>
+            </div>
+
+            <div class="uiux-card education-card">
+              <h4>Website Development (Cubithost)</h4>
+              <p class="dates">Feb. 2026</p>
+              <p>
+                Focused training on leveraging WordPress for business needs,
+                covering professional site setup, security, and easy
+                maintenance.
+              </p>
+            </div>
+
+            <div class="education-card">
+              <h4>CS50’s Introduction to Computer Science (Harvard)</h4>
+              <p class="dates">Dec. 2025</p>
+              <p>
+                Completed the foundational course in computer science, covering
+                topics like data structures, algorithms, memory management, and
+                C, Python, and SQL.
+              </p>
+            </div>
+
+            <div class="education-card">
+              <h4>ALX Software Engineering Programme (ProDev Frontend)</h4>
+              <p class="dates">oct. 2025</p>
+              <p>
+                Intensive training in modern Frontend technologies, including
+                advanced JavaScript, React, and building professional-grade,
+                scalable web applications.
+              </p>
+            </div>
+
+            <div class="education-card">
+              <h4>ALX Professional Foundation — African Leadership Group</h4>
+              <p class="dates">June. 2025</p>
+              <p>
+                Developed critical soft skills, professional communication, and
+                leadership capacity essential for career advancement and
+                collaborative team environments.
+              </p>
+            </div>
+
+            <div class="education-card">
+              <h4>Full Stack Software Developer Intern (GIIT Africa)</h4>
+              <p class="dates">Dec. 2024</p>
+              <p>
+                Gained hands-on experience in full-stack project development,
+                focusing on database integration and backend logic alongside
+                user interface design.
+              </p>
+            </div>
+
+            <div class="education-card">
+              <h4>Side Hustle Bootcamp / SIIT Professional Diploma</h4>
+              <p class="dates">Jan. 2024</p>
+              <p>
+                Acquired skills in digital marketing strategies, content
+                creation, SEO optimization, and leveraging platforms for
+                business growth.
+              </p>
+            </div>
+          </div>
+
+          <div class="interest-grid">
+            <div class="interest-card">
+              <h4>UX/UI Case Studies</h4>
+              <p>
+                Analyzing well-designed interfaces and exploring new interaction
+                patterns to improve my frontend work.
+              </p>
+            </div>
+
+            <div class="interest-card">
+              <h4>Homelab and Server Tinkering</h4>
+              <p>
+                Building and maintaining personal virtual environments (e.g.,
+                using VMware/VirtualBox) to test networking and system
+                deployment.
+              </p>
+            </div>
+
+            <div class="interest-card">
+              <h4>Technical Blogging & Content Creation</h4>
+              <p>
+                Writing tutorials on WordPress optimization or IT
+                troubleshooting tips to reinforce my knowledge and engage the
+                community.
+              </p>
+            </div>
+
+            <div class="interest-card">
+              <h4>Competitive Programming / Code Challenges</h4>
+              <p>
+                Participating in platforms like LeetCode or HackerRank to
+                sharpen algorithmic thinking and advanced JavaScript skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Osemwengie Arit Bright — All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
