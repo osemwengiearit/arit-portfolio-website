@@ -89,6 +89,20 @@ nav a.active {
   color: var(--text);
 }
 
+.contact {
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  margin-left: 6rem;
+  font-weight: 600;
+}
+
+.contact:hover {
+  background-color: var(--muted);
+  color: #fff;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -234,7 +248,7 @@ nav a.active {
 .social-links a:hover {
   background: var(--accent);
   color: var(--bg);
-  /* transform: translateY(-4px); */
+  transform: translateY(-4px);
   transform: translateY(-6px) scale(1.1);
 }
 
@@ -318,7 +332,7 @@ nav a.active {
 }
 
 /* This is the about section styling */
-.about-section {
+.about-container {
   width: 90%;
   max-width: 1150px;
   margin: 100px auto;
@@ -349,26 +363,13 @@ nav a.active {
   color: var(--accent);
 }
 
-.about-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
-
-.about-left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-photo {
-  width: 320px;
-  max-width: 100%;
-  border-radius: 12px;
+.about-text {
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur (12px);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  max-width: 700px;
+  color: var(--text);
 }
 
 .about-right {
@@ -384,10 +385,160 @@ nav a.active {
 
 .about-bio {
   font-size: 1.05rem;
-  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
   color: var(--text);
 }
 
-.about-bio--muted {
+.about-subtitle {
+  color: var(--muted);
+  line-height: 1.7;
   opacity: 0.8;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.about-media {
+  flex: 1;
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  /* display: flex; */
+}
+
+.about-media img {
+  width: 320px;
+  border-radius: 15px;
+}
+
+/* .hero-media {
+  flex: 1;
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hero-media img {
+  width: 100%;
+  border-radius: 15px;
+} */
+
+.profile-photo {
+  width: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid var(--text);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.05);
+}
+
+/* This is the contact section styling */
+
+.form-container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.form-text {
+  align-content: center;
+  padding: 80px 20px;
+  justify-content: center;
+}
+
+.form-text h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  color: #0ea5e9;
+  text-transform: capitalize;
+}
+
+.form-text p {
+  font-size: 25px;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.connect {
+  color: var(--accent);
+  letter-spacing: normal;
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.form-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  background: var(--card);
+  width: 100%;
+  box-shadow: rgba(14, 165, 233, 0.18);
+}
+
+.user-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1e293b;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input-details textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+  font-size: 0.9rem;
+  resize: none;
+  grid-column: span 2;
+}
+
+.submit {
+  padding: 0.9rem 1.8rem;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--primary);
+  font-weight: 600;
+  margin-top: 20px;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+}
+
+.submit:hover {
+  background: var(--accent);
+  color: var(--bg);
 }

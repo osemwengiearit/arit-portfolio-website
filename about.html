@@ -43,8 +43,8 @@
       </div>
     </header>
 
-    <main>
-      <section class="about-section" id="about">
+    <main class="container">
+      <section class="about-container" id="about">
         <header class="section-head">
           <h2 id="about-heading" class="section-title">about me</h2>
         </header>
@@ -55,79 +55,91 @@
           </h3>
         </div>
 
-        <div class="about-wrapper">
-          <div class="about-left">
-            <img
-              class="profile-photo"
-              src="img/hero.png"
-              alt="Osemwengie Arit Bright portrait"
-            />
+        <div class="about-text card">
+          <div class="about-wrapper">
+            <!-- <div class="about-media card" aria-hidden="false">
+              <img
+                class="profile-photo"
+                src="img/hero.png"
+                alt="arit picture"
+              />
+            </div> -->
+            <div class="about-right">
+              <p class="about-bio">
+                I’m a passionate software developer focused on building clean,
+                accessible, and scalable web applications. I enjoy turning ideas
+                into functional and visually appealing digital solutions using
+                modern technologies.
+              </p>
+
+              <p class="about-subtitle">
+                I constantly improve my craft through hands-on practice,
+                learning, and embracing best coding standards. I believe that
+                quality products come from structured thinking, great
+                collaboration, and clean, maintainable code.
+              </p>
+            </div>
           </div>
 
-          <div class="about-right">
-            <p class="about-bio">
-              I’m a passionate software developer focused on building clean,
-              accessible, and scalable web applications. I enjoy turning ideas
-              into functional and visually appealing digital solutions using
-              modern technologies.
-            </p>
-            <p class="about-bio about-bio--muted">
-              I constantly improve my craft through hands-on practice, learning,
-              and embracing best coding standards. I believe that quality
-              products come from structured thinking, great collaboration, and
-              clean, maintainable code.
-            </p>
+          <div class="cta-group">
+            <a class="btn-primary" href="resume.html">resume</a>
+            <a class="btn-outline" href="#" download>download cv &darr;</a>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/osemwengiearit"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/osemwengie-arit-bright-a84a28159/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://x.com/arit_bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/arit_bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/osemwengie.arit.bright"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
           </div>
         </div>
-
-        <div class="cta-group">
-          <a class="btn-primary" href="resume.html">resume</a>
-          <a class="btn-outline" href="#" download>download cv &darr;</a>
-        </div>
-
-        <div class="social-links">
-          <a
-            href="https://github.com/osemwengiearit"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/osemwengie-arit-bright-a84a28159/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://x.com/arit_bright"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/arit_bright"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://web.facebook.com/osemwengie.arit.bright"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-            ><i class="fab fa-facebook"></i
-          ></a>
+        <div class="about-media card" aria-hidden="false">
+          <img class="profile-photo" src="img/hero.png" alt="arit picture" />
         </div>
       </section>
     </main>
+
     <footer class="site-footer">
       <div class="container">
-        <p>© 2025 Osemwengie Arit Bright — All rights reserved.</p>
+        <p>
+          &copy; <span id="year"></span> Osemwengie Arit Bright — All rights
+          reserved.
+        </p>
       </div>
     </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
