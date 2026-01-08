@@ -484,6 +484,16 @@ nav a.active {
   box-shadow: 0 6px 18px rgba(255, 255, 255, 0.05);
 }
 
+/*This is the services section styling*/
+
+.service-container {
+  background: #6e6d6c;
+}
+
+.biz-reg-section {
+  background: #b2ebf2;
+}
+
 /* This is the contact section styling */
 
 .form-container {
